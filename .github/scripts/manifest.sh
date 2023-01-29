@@ -51,6 +51,9 @@ containerd)
 docker)
   IMAGE_KUBE=kubernetes-docker
   ;;
+cri-o)
+  IMAGE_KUBE=kubernetes-crio
+  ;;
 esac
 
 if ! [[ "$SEALOS" =~ ^[0-9\.]+[0-9]$ ]] || [[ -n "$sealosPatch" ]]; then
